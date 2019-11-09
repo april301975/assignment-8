@@ -50,9 +50,7 @@
         grid-row: 2/3;
       }
 
-      /* .fa-beer {
-        color: #f28e1c;
-      } */
+
       .fa-map-marker-alt {
         color: red;
       }
@@ -60,6 +58,59 @@
         color: #03a3df;
       }
 
+
+      .nav-container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: minmax(20px, auto);
+        grid-gap: 0em ;
+      }
+      .nav-container nav {
+        background: #03a3df;  /* light blue */
+        padding: 0em;
+        font-family: sans-serif;
+        font-weight:700;
+        font-size: 120%;
+      }
+      .nav-1 {
+        grid-column: 1/6;
+      }
+      .nav-2 {
+        grid-column: 6/9;
+      }
+
+      .flex-navs {
+        display: flex;
+        /* by default flex display horizontally */
+        flex-direction: row; /* row  column   row-reverse   column-reverse    */
+        height: 60px;
+        background-color: #03a3df;
+        /* border: 3px dashed chartreuse; */
+
+        flex-wrap: wrap;    /* wrap    nowrap  wrap-reverse   */
+        /* determines how sizing
+        the browser moves the boxes around or re-size them down to
+        to fit the smaller width of the browser */
+
+        justify-content: space-evenly;
+        /* center  horizontally
+        flex-start (similar to horizontally)
+        flex-end   (righ-align things )
+        space-around
+        space-between
+        space-evenly  */
+
+        align-items: center;
+        /* center ( vertically aligns )
+        vertically  (aligns to the top )*/
+      }
+
+
+      .links {
+        height: auto;
+        width: auto;
+        /* border: 2px dashed black; */
+      }
 
     </style>
   </head>
@@ -84,36 +135,28 @@
         </article>
       </section>
 
-      <!-- <section class="header-section-1 nested ">
-        <article class="header-article-1">
-          528 Nock Point Lane<br>
-          Tacoma, WA 98412
-        </article> -->
-        <!-- <article class="header-article-2"> -->
-          <!-- <i class="fas fa-map-marker-alt fa-2x"></i>&nbsp;&nbsp;
-          <i class="fab fa-facebook-square fa-2x"></i>&nbsp;&nbsp;
-          <i class="fab fa-instagram fa-2x"></i>&nbsp;&nbsp;
-          <i class="fas fa-phone-square fa-2x"></i>&nbsp;&nbsp;
-          <i class="fas fa-envelope fa-2x"></i>
-        </article> -->
 
-      <!-- </section> -->
-      <!-- <section class="header-2">
-        Nested section 1
-      </section>
-      <section class="header-2">
-        Nested section 2
-      </section> -->
-      <!-- <header2>
-          <section class="nested-header">
-            Nested section 1 Lorem ipsum dolor sit amet, consectetuer adipiscing elitLorem ipsum dolor sit amet, consectetuer adipiscing elit
-          </section>
-          <section class="nested-header">
-            Nested section 2
-          </section>
-      </header2> -->
     </header>
+    <header class="nav-container">
+      <nav class="nav-1" >
+        <!-- Navs 1 -->
+        <section class="flex-navs">
+          <p class="links">Home</p>
+          <p class="links">Classes</p>
+          <p class="links">Our Instructors</p>
+          <p class="links">Registration</p>
+          <p class="links">Policy</p>
+          <p class="links">Contat Us</p>
+          <p class="links">About Us</p>
+        </section>
 
+      </nav>
+
+      <nav class="nav-2">
+        <!-- Nav2 -->
+      </nav>
+
+  </header>
 
 
   </body>
