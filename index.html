@@ -62,7 +62,7 @@
       .nav-container {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        grid-auto-rows: minmax(20px, auto);
+        grid-auto-rows: minmax(auto, auto);
         grid-gap: 0em ;
       }
       .nav-container nav {
@@ -83,7 +83,8 @@
         display: flex;
         /* by default flex display horizontally */
         flex-direction: row; /* row  column   row-reverse   column-reverse    */
-        height: 60px;
+        height: auto;  /* to keep the menu links below the banner from "falling out" of the nav
+                          area when the screen is too narrow */
         background-color: #03a3df;
         /* border: 3px dashed chartreuse; */
 
@@ -147,7 +148,7 @@
           <p class="links">Registration</p>
           <p class="links">Policy</p>
           <p class="links">Contat Us</p>
-          
+
         </section>
 
       </nav>
@@ -157,7 +158,11 @@
       </nav>
 
   </header>
-
+  <video width="1920" height="1080" loop autoplay muted preload="auto" >
+    <source src="archery.mp4" type="video/mp4">
+    <!-- <source src="archery.ogg" type="video/ogg"> -->
+    <!-- Your browser does not support HTML5 video. -->
+  </video>
 
   </body>
 </html>
