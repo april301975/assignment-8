@@ -113,6 +113,11 @@
         /* border: 2px dashed black; */
       }
 
+      .video {
+        grid-column: 1/9;
+        /* grid-row: 1/2; */
+      }
+
     </style>
   </head>
   <body>
@@ -158,11 +163,16 @@
       </nav>
 
   </header>
-  <video width="1920" height="1080" loop autoplay muted preload="auto" >
-    <source src="archery.mp4" type="video/mp4">
-    <!-- <source src="archery.ogg" type="video/ogg"> -->
-    <!-- Your browser does not support HTML5 video. -->
-  </video>
+  <section class="video">
+    <video width="1888" height="1062" loop autoplay muted preload="auto" >
+      <source src="archery.mp4" type="video/mp4">
+    </video>
+  </section>
+
+
+  <footer>
+
+  </footer>
 
   </body>
 </html>
