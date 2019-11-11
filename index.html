@@ -5,6 +5,7 @@
     <title>assignment-8</title>
     <script src="https://kit.fontawesome.com/c45d99654e.js" crossorigin="anonymous"></script>
     <style media="screen">
+
       .container {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -79,7 +80,7 @@
         grid-column: 7/9;
       }
 
-      .flex-navs {
+      .flex-nav {
         display: flex;
         /* by default flex display horizontally */
         flex-direction: row; /* row  column   row-reverse   column-reverse    */
@@ -115,9 +116,75 @@
 
       .video {
         grid-column: 1/9;
-        /* grid-row: 1/2; */
+        grid-row: 1/2;
       }
 
+      /* .footer-container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        grid-gap: 0em ;
+      }
+
+      .footer-container > section {
+        background: #ecb722;
+        padding: 1em;
+        font-family: sans-serif;
+        font-weight:900;
+        font-size: 150%;
+      }
+
+      .footer-section-1 {
+        grid-column: 1/9;
+
+      }
+      .footer-section-2 {
+        grid-column: 3/9;
+      } */
+
+
+      /* -------------------- */
+      .archery-footer {
+        height: 250px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url("images/footerImage.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-style: normal;
+        font-size: 80%;
+        color: white;
+      }
+
+      .footer-section {
+        display: flex;
+        /* align-items: start; */
+        /* justify-content: start; */
+      }
+
+      .footer-nav {
+        margin: 25px;
+        color: white;
+        padding: 1em;
+        font-family: sans-serif;
+        font-weight:900;
+        font-size: 100%;
+      }
+
+      .footer-copyright {
+        margin: 25px;
+        color: white;
+        padding: 1em;
+        font-family: sans-serif;
+        font-weight:300;
+        font-size: 100%;
+      }
+
+
+
+      /* -------------------------- */
     </style>
   </head>
   <body>
@@ -146,10 +213,10 @@
     <header class="nav-container">
       <nav class="nav-1" >
         <!-- Navs 1 -->
-        <section class="flex-navs">
-          <p class="links">Home</p>
+        <section class="flex-nav">
+          <p class="links"><a href="index.html">Home</a></p>
           <p class="links">Classes</p>
-          <p class="links">Our Instructors</p>
+          <p class="links"><a href="instructor.html">Our Instructors</a></p>
           <p class="links">Registration</p>
           <p class="links">Policy</p>
           <p class="links">Contact Us</p>
@@ -170,9 +237,25 @@
   </section>
 
 
-  <footer>
+    <footer class="archery-footer">
 
-  </footer>
+      <section>
+        <figure>
+          <img src="images/archeryAcademy-logo-white.png" alt="Archery Academy footer image" title="Archery Academy footer image">
+        </figure>
+
+        <nav class="footer-nav" >
+          <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Classes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="instructor.html">Our Instructors</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Registration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Contact Us
+        </nav>
+        <p class="footer-copyright">&copy; 2019 Archery Academy, LLC  |  Tacoma, WA</p>
+      </section>
+    </footer>
+
 
   </body>
 </html>
