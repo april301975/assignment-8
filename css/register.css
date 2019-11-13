@@ -1,0 +1,26 @@
+button, input, select, textarea label fieldset {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem;
+}
+input[type=submit] {
+  width: 30%;
+  background-color: #03a3df;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: transparent;
+}
+
+ input {
+   border-radius: 5px;
+ }
+
+ fieldset {
+   border: none;
+ }
+ fieldset input {
+   display: inline;
+ }

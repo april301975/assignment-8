@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>assignment-8</title>
+    <script src="https://kit.fontawesome.com/c45d99654e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+  </head>
+  <body>
+
+    <header class="container">
+      <section class="header-section-1">
+        <img src="images/archeryAcademy-logo-color.png" alt="image for Archery Academy">
+      </section>
+
+      <section class="header-section-2 nested">
+        <article>
+          528 Nock Point Lane<br>
+          Tacoma, WA 98412
+        </article>
+        <article class="header-article-2">
+          <i class="fas fa-map-marker-alt fa-2x"></i>&nbsp;&nbsp;
+          <i class="fab fa-facebook-square fa-2x"></i>&nbsp;&nbsp;
+          <i class="fab fa-instagram fa-2x"></i>&nbsp;&nbsp;
+          <i class="fas fa-phone-square fa-2x"></i>&nbsp;&nbsp;
+          <i class="fas fa-envelope fa-2x"></i>
+        </article>
+      </section>
+
+
+    </header>
+    <header class="nav-container">
+      <nav class="nav-1" >
+        <!-- Navs 1 -->
+        <section class="flex-nav">
+          <p class="links"><a href="index.html">Home</a></p>
+          <p class="links"><a href="classes.html">Classes</a></p>
+          <p class="links"><a href="instructor.html">Our Instructors</a></p>
+          <p class="links">Registration</p>
+          <p class="links">Policy</p>
+          <p class="links">Contact Us</p>
+
+        </section>
+
+      </nav>
+
+      <nav class="nav-2">
+        <!-- Nav2 -->
+      </nav>
+
+  </header>
+  <section class="table-container">
+
+
+    <h2>Archery Class Registration Form</h2>
+    <form class="register" action="registration.html" method="get">
+
+
+        <label>Name:
+          <input type="text" name="studentName">
+        </label>
+        <label>Email:
+          <input type="email" name="studentEmail">
+        </label>
+
+          <label>Address:</label>
+            <input name="addressLine1" type="text" placeholder="Street address">
+            <input name="addressLine2" type="text" placeholder="Apartment, suite , unit">
+            <input name="city" type="text" placeholder="city">
+            <input name="state" type="text" placeholder="state">
+            <input name="zipcode" type="text" placeholder="zipcode">
+
+
+        <label>Phone:
+          <input type='tel' pattern='\d{3}[\-]\d{3}[\-]\d{4}' title='Phone Number 10-digit format' placeholder="999-999-99999">
+        </label>
+        <br>
+        <label>Your age range
+          <select name="ageRange">
+            <option value="">Please select</option>
+            <option value="preteen">Under 12</option>
+            <option value="earlyteen">13-15</option>
+            <option value="lateteen">16-19</option>
+            <option value="pastteen">older than 20</option>
+          </select>
+        </label>
+        <br>
+        <label>What interested you about archery?<br>
+          <textarea name="archeryReason" rows="4" cols="40" ></textarea>
+        </label>
+        <br><br>
+        <fieldset>
+          <legend>Pick a class</legend>
+          <label>
+            <input type="radio" name="className" value="A101">
+            A101 Basic Archery
+          </label>
+          <label>
+            <input type="radio" name="className" value="A102">
+            A102 Intermediate Archery
+          </label>
+          <label>
+            <input type="radio" name="className" value="A103">
+            A103 Advanced Archery
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="className" value="single">
+            Private: Single Lesson
+          </label>
+          <label>
+            <input type="radio" name="className" value="3-pkg">
+            Private: 3-Lesson Package
+          </label>
+          <label>
+            <input type="radio" name="className" value="10-pkg">
+            Private: 10-Lesson Package
+          </label>
+        </fieldset>
+
+
+
+      <input type="submit"  value="Register">
+
+    </form>
+
+  </section>
+
+
+
+    <footer class="archery-footer">
+
+      <section>
+        <figure>
+          <img src="images/archeryAcademy-logo-white.png" alt="Archery Academy footer image" title="Archery Academy footer image">
+        </figure>
+
+        <nav class="footer-nav" >
+          <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="classes.html">Classes</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="instructor.html">Our Instructors</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Registration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Contact Us
+        </nav>
+        <p class="footer-copyright">&copy; 2019 Archery Academy, LLC  |  Tacoma, WA</p>
+      </section>
+    </footer>
+
+
+  </body>
+</html>
