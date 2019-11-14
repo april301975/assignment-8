@@ -7,7 +7,7 @@ button, input, select, textarea label fieldset {
 }
 input[type=submit] {
   width: 30%;
-  background-color: #03a3df;
+  background-color: #18BFFB;
 }
 input:focus::-webkit-input-placeholder
 {

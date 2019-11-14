@@ -58,7 +58,7 @@
     color: red;
   }
   .fa-facebook-square {
-    color: #03a3df;
+    color: #18BFFB;
   }
 
   .instructor-container {
@@ -169,7 +169,7 @@
     grid-gap: 0em ;
   }
   .nav-container nav {
-    background: #03a3df;  /* light blue */
+    background: #18BFFB;  /* light blue */
     padding: 0em;
     font-family: sans-serif;
     font-weight:700;
@@ -188,7 +188,7 @@
     flex-direction: row; /* row  column   row-reverse   column-reverse    */
     height: auto;  /* to keep the menu links below the banner from "falling out" of the nav
                       area when the screen is too narrow */
-    background-color: #03a3df;
+    background-color: #18BFFB;
     /* border: 3px dashed chartreuse; */
 
     flex-wrap: wrap;    /* wrap    nowrap  wrap-reverse   */
@@ -272,7 +272,7 @@
     flex-direction: column; /* row  column   row-reverse   column-reverse    */
     height: auto;  /* to keep the menu links below the banner from "falling out" of the nav
                       area when the screen is too narrow */
-    /* background-color: #03a3df; */
+    /* background-color: #18BFFB; */
     /* border: 3px dashed chartreuse; */
     flex-wrap: wrap;    /* wrap    nowrap  wrap-reverse   */
     justify-content: space-evenly;
